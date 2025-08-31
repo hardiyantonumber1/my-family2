@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Keluarga - SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Keluarga Kami</h1>
+    <nav>
+      <button class="nav-btn" data-target="beranda">Beranda</button>
+      <button class="nav-btn" data-target="anggota">Anggota</button>
+      <button class="nav-btn" data-target="agenda">Agenda</button>
+      <button class="nav-btn" data-target="galeri">Galeri</button>
+      <button class="nav-btn" data-target="buku-tamu">Buku Tamu</button>
+      <button class="nav-btn" data-target="tugas">Tugas</button>
+      <button class="nav-btn" data-target="keuangan">Keuangan</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Beranda -->
+    <section id="beranda" class="page active">
+      <h2>Selamat Datang di Website Keluarga</h2>
+      <p>Website ini menyimpan cerita, agenda, galeri, dan momen berharga keluarga kami.</p>
+    </section>
+
+    <!-- Anggota -->
+    <section id="anggota" class="page">
+      <h2>Anggota Keluarga</h2>
+      <div class="anggota-container" id="anggotaContainer"></div>
+    </section>
+
+    <!-- Agenda -->
+    <section id="agenda" class="page">
+      <h2>Agenda Keluarga</h2>
+      <div id="agendaContainer"></div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="page">
+      <h2>Galeri Foto</h2>
+      <div id="galeriContainer"></div>
+    </section>
+
+    <!-- Buku Tamu -->
+    <section id="buku-tamu" class="page">
+      <h2>Buku Tamu</h2>
+      <div id="bukuTamuContainer"></div>
+    </section>
+
+    <!-- Tugas -->
+    <section id="tugas" class="page">
+      <h2>Tugas Rumah</h2>
+      <div id="tugasContainer"></div>
+    </section>
+
+    <!-- Keuangan -->
+    <section id="keuangan" class="page">
+      <h2>Keuangan Keluarga</h2>
+      <div id="keuanganContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Keluarga Kami. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

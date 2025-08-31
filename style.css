@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fdfcf7; /* krem */
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #d0f0fd; /* biru pastel */
+  padding: 20px;
+  border-bottom: 2px solid #a0d4f7;
+}
+
+header h1 {
+  color: #1c6ca0;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+.nav-btn {
+  background: #1c6ca0;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #155080;
+}
+
+main {
+  padding: 20px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+footer {
+  background: #d0f0fd;
+  padding: 15px;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 2px solid #a0d4f7;
+  margin-top: 40px;
+}
+
+/* ===== Anggota Keluarga ===== */
+.anggota-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #1c6ca0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card button {
+  background: #1c6ca0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #155080;
+}
+
+/* ===== Modal Ucapan ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  color: #1c6ca0;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.close-modal {
+  background: #1c6ca0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background: #155080;
+}
